@@ -14,11 +14,16 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/h324/overlay
+# Inherit some common CM stuff
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-LOCAL_PATH := device/lge/h324
+# Inherit device configuration
+$(call inherit-product, device/lge/h324/full_h324.mk)
 
+# Device name
+PRODUCT_NAME := cm_h324
+PRODUCT_DEVICE := h324
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
-
-#$(call inherit-product, vendor/lge/h324/h324-vendor.mk)
+# CM packages
+PRODUCT_PACKAGES += \
+    Torch

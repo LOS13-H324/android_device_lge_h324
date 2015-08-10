@@ -14,11 +14,15 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/h324/overlay
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from h324 device
 
-LOCAL_PATH := device/lge/h324
+$(call inherit-product, device/lge/h324/h324.mk)
 
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
-
-#$(call inherit-product, vendor/lge/h324/h324-vendor.mk)
+# Set those variables here to overwrite the inherited values.
+PRODUCT_NAME := full_h324
+PRODUCT_DEVICE := h324
+PRODUCT_BRAND := LG
+PRODUCT_MANUFACTURER := LG
+PRODUCT_MODEL := Leon

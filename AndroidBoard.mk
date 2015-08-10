@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/h324/overlay
+LOCAL_PATH := $(call my-dir)
 
-LOCAL_PATH := device/lge/h324
-
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
-
-#$(call inherit-product, vendor/lge/h324/h324-vendor.mk)
+include $(CLEAR_VARS)
