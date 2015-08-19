@@ -44,7 +44,7 @@ ro.kernel.zio=38,108,105,16
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
 
-ro.sf.lcd_density=320
+ro.sf.lcd_density=240
 
 # Set default ATCI on UserMode for MUSE
 #persist.service.atci.usermode=1
