@@ -14,6 +14,22 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/slim/config/gsm.mk)
 
-include $(CLEAR_VARS)
+# Inherit some common CM stuff
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/lge/h324/full_h324.mk)
+
+# Correct boot animation size for the screen
+TARGET_SCREEN_HEIGHT := 854
+TARGET_SCREEN_WIDTH := 480
+
+# Device name
+PRODUCT_NAME := slim_h324
+PRODUCT_DEVICE := h324
+
+PRODUCT_PACKAGES += \
+    Torch

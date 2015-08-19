@@ -11,13 +11,12 @@
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
-# limitations under the License.
-#
+# limitations under the Licens.
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from h324 device
 
+# Inherit from h324 device
 $(call inherit-product, device/lge/h324/h324.mk)
 
 # Set those variables here to overwrite the inherited values.
