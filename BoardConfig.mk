@@ -41,7 +41,10 @@ TARGET_OTA_ASSERT_DEVICE := leon,h324,lge_h324
 
 # Kernel
 TARGET_KERNEL_CONFIG := muse6582_y50_l_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/h324
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.9-14.06/bin/arm-linux-gnueabihf-
+TARGET_KERNEL_SOURCE := kernel/lge/mt6582
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.9-14.06/bin/arm-linux-gnueabihf-
+
+# Recovery
+TARGET_RECOVERY_FSTAB := device/huawei/u8950/rootdir/fstab.huawei
 
 
