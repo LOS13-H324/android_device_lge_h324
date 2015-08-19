@@ -18,7 +18,8 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/h324/overlay
 
 LOCAL_PATH := device/lge/h324
 
-
+PRODUCT_PROPERTY_OVERRIDES += \
+	
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 
-#$(call inherit-product, vendor/lge/h324/h324-vendor.mk)
+$(call inherit-product, vendor/lge/h324/h324-vendor.mk)
