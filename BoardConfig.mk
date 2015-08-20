@@ -45,6 +45,6 @@ TARGET_PREBUILT_KERNEL := device/lge/h324/kernel
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.9-14.06/bin/arm-linux-gnueabihf-
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lge/h3243/rootdir/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/lge/h324/rootdir/recovery.fstab
 
 
