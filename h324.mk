@@ -30,16 +30,6 @@ PRODUCT_PACKAGES += \
 	libstagefright
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	rild.libpath=/system/lib/mtk-ril.so \
-	rild.libargs=-d /dev/ttyC0 \
-	ro.mediatek.wlan.wsc=1 \
-	ro.mediatek.wlan.p2p=1 \
-	mediatek.wlan.ctia=0 \
-	wifi.tethering.interface=ap0 \
-	ro.telephony.default_network=0 \
-	gsm.setPrefNetworkType=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072 \
 	ro.sf.lcd_density=240
 	ro.sdcrypto.syscall=380
