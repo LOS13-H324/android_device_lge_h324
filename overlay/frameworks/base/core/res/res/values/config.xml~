@@ -159,6 +159,7 @@
         <item>mobile_vtims,28,0,2,-1,true</item>
     </string-array>
 
+    </integer-array>
     <string-array name="radioAttributes">
         <item>1,1</item>
         <item>0,1</item>
