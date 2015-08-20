@@ -1,6 +1,13 @@
-#
-# system.prop for generic sdk
-#
+
+rild.libpath=/system/lib/mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+ro.telephony.default_network=0
+gsm.setPrefNetworkType=true
 
 # USB MTP WHQL
 ro.sys.usb.mtp.whql.enable=0
